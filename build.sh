@@ -1,6 +1,12 @@
 #!/bin/bash
 echo "run sender"
-python sender.py
+docker build -t my_ipc_server
+docker images
+
+docker run -rm -p 12345:12345 my_ipc_server
 
 echo "run client"
-python client.py
+docker build -t my_ipc_client
+docker images
+
+docker run -rm -p 

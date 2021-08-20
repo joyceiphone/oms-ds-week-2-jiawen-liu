@@ -1,0 +1,4 @@
+# Get the latest base image for python
+FROM python:latest
+# Execute the command
+CMD ["python3", "client.py"]
